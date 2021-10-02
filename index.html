@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>İzzet TÜR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">Ankara Gezisi SEÇİMİNİ YAP</div>
+    <div class="box">
+      <input type="radio" name="myRadios" onclick="handleClick(this);" value="Akıllıca :) Hepsi"  id="option-1">
+      <input type="radio" name="myRadios" onclick="handleClick(this);" value="Akşam Yemeği, Gece Dinlenme, Sabah Kahvaltı" id="option-2">
+      <input type="radio" name="myRadios" onclick="handleClick(this);" value="Akşam Yemeği" id="option-3">
+      <input type="radio" name="myRadios" onclick="handleClick(this);" value="Sabah Kahvaltı"id="option-4">
+	  
+	  
+	  
+      <label for="option-1" class="option-1">
+        <div class="dot"></div>
+        <div class="text">İstediğimiz Kadar Kalacağız - Aşağıdakilerin Hepsi</div>
+      </label>
+      <label for="option-2" class="option-2">
+        <div class="dot"></div>
+        <div class="text">Akşam Yemeği, Gece Dinlenme, Sabah Kahvaltı</div>
+      </label>
+      <label for="option-3" class="option-3">
+        <div class="dot"></div>
+        <div class="text">Akşam Yemeği</div>
+      </label>
+      <label for="option-4" class="option-4">
+        <div class="dot"></div>
+        <div class="text">Sabah Kahvaltı</div>
+      </label>
+    </div>
+  </div>
+ <!-- Created By CodingNepal <h2>JavaScript Alert</h2> 
+<button onclick="handleClick()">Seçimi Bildir</button> --> 
+
+
+
+<script>
+var currentValue = 0;
+function handleClick(myRadio) {
+    alert('Seçiminiz: ' + myRadio.value);
+    currentValue = myRadio.value;
+    window.open('mailto:izzet07@gmail.com?subject=secim&body=currentValue'+ myRadio.value);
+}
+</script>
+  
+</body>
+</html>
